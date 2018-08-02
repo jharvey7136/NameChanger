@@ -29,7 +29,7 @@ namespace StringFormat
                 {
                     var words = line.Split(null).Select(s => s.Trim()).Where(s => !string.IsNullOrEmpty(s));                    
                     count = words.Count();
-                    Console.WriteLine(count);
+                    //Console.WriteLine(count);
 
                     first = words.ElementAt(0);
 
@@ -39,7 +39,7 @@ namespace StringFormat
                     }
                     else
                     {
-                        if (words.ElementAt(2) == null || words.ElementAt(3) == null || words.ElementAt(4) == null || words.ElementAt(5) == null)
+                        if (words.ElementAt(2) == null)
                         {
                             last = words.ElementAt(1);
                         }
